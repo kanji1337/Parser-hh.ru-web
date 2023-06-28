@@ -8,6 +8,14 @@
 <body>
     <script>
         pywebio.run('main.py', '/');
+        function main() {
+            // Ваш код PyWebIO
+            pywebio.input("What is your name?", {
+                callback: function(name) {
+                    pywebio.output("Hello, " + name);
+                }
+            });
+        }
     </script>
 </body>
 </html>
